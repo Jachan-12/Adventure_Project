@@ -19,19 +19,21 @@ export default function App() {
       end: false
     },
     1: {
-      goal: "Suddenly a bear out of nowhere approaches you, what will you do?",
+      goal:
+        "Suddenly you see a bear a couple of meters away, what will you do?",
       setting:
         "You're in a dense forest, the birds in the trees noisily chirping away.",
       option1: "Run away",
       option2: "Play dead",
-      option1Num: 2,
+      option1Num: 5,
       option2Num: 3,
       end: false
     },
     2: {
-      goal: "",
-      setting: "",
-      option1: "",
+      goal:
+        "You prepare and gather materials necessary for your journey. You set out the next day into the forest, which you meet someone",
+      setting: "An old man who seems to be a trader beckons you over",
+      option1: "", // DO THIS PART
       option2: "",
       option1Num: 4,
       option2Num: 5,
@@ -40,33 +42,58 @@ export default function App() {
     3: {
       goal: "You play dead, and the bear sniffs you, then walks away.",
       setting: "The bear lost its curiosity, and heads back towards its den.",
-      option1: "Get up and run away",
-      option2: "Fight the bear",
-      option1Num: 6,
-      option2Num: 7,
+      option1: "Get up and run",
+      option2: "Suprise attack the bear",
+      option1Num: 5,
+      option2Num: 6,
       end: false
     },
     4: {
-      goal: "You play dead, and the bear sniffs you, then walks away.",
-      setting: "The bear lost its curiosity, and heads back towards its den.",
-      option1: "Get up and run away",
-      option2: "Fight the bear",
-      option1Num: 6,
-      option2Num: 7,
+      goal: "",
+      setting: "",
+      option1: "",
+      option2: "",
+      option1Num: 5,
+      option2Num: 6,
       end: false
     },
     5: {
-      goal: "You play dead, and the bear sniffs you, then walks away.",
-      setting: "The bear lost its curiosity, and heads back towards its den.",
-      option1: "Get up and run away",
-      option2: "Fight the bear",
-      option1Num: 6,
-      option2Num: 7,
+      goal:
+        "You start to run, but the bear hears you and it goes after you. You stop at a cliff, with a pond around 300 feet below.",
+      setting: "The bear has big strides and weaves in between the trees",
+      option1: "Jump into the pond",
+      option2: "Dance for the bear",
+      option1Num: 7,
+      option2Num: 6,
       end: false
     },
     6: {
-      end: true,
-      endMessage: ""
+      goal: "You've Died, Sorry!",
+      end: false
+    },
+    7: {
+      goal:
+        "You hold your breath and plunge into the water, resurface, and dry off on the land.",
+      setting: "You're still in the forest, and you see smoke in the distance",
+      option1: "Head towards the smoke immediately",
+      option2: "Gear up, then head towards the smoke",
+      option1Num: 6,
+      option2Num: 8,
+      end: false
+    },
+    8: {
+      goal:
+        "Congratulations! You defeat the bandits and bring your parents home to safety. You win!",
+      end: false
+    },
+    9: {
+      goal: "",
+      setting: "",
+      option1: "",
+      option2: "",
+      option1Num: 5,
+      option2Num: 6,
+      end: false
     }
   };
   let options1 = [
