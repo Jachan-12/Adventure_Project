@@ -15,7 +15,7 @@ export default function App() {
   let options = {
     0: {
       option1Num: 1,
-      option2Num: 10,
+      option2Num: 2,
       end: false
     },
     1: {
@@ -31,12 +31,13 @@ export default function App() {
     },
     2: {
       goal:
-        "You prepare and gather materials necessary for your journey. You set out the next day into the forest, which you meet someone",
-      setting: "An old man who seems to be a trader beckons you over",
-      option1: "", // DO THIS PART
-      option2: "",
-      option1Num: 4,
-      option2Num: 5,
+        "You gear up and set out. You come across an injured baby wolf, what do you do?",
+      setting:
+        "The forest is bustling with wildlife, a baby wolf with blood around its leg lays there.",
+      option1: "Tend to its wounds",
+      option2: "End its suffering",
+      option1Num: 9,
+      option2Num: 6,
       end: false
     },
     3: {
@@ -44,15 +45,6 @@ export default function App() {
       setting: "The bear lost its curiosity, and heads back towards its den.",
       option1: "Get up and run",
       option2: "Suprise attack the bear",
-      option1Num: 5,
-      option2Num: 6,
-      end: false
-    },
-    4: {
-      goal: "",
-      setting: "",
-      option1: "",
-      option2: "",
       option1Num: 5,
       option2Num: 6,
       end: false
@@ -87,6 +79,38 @@ export default function App() {
       end: false
     },
     9: {
+      goal:
+        "You see that the baby wolf has a gash on its leg, and clean it and bandage it. Then a big wolf steps out the brush and approaches you.",
+      setting: "A big, muscular wolf the size of you approaches slowly",
+      option1: "Throw the pup as bait and run away",
+      option2: "Hand the wolf the pup",
+      option1Num: 6,
+      option2Num: 10,
+      end: false
+    },
+    10: {
+      goal:
+        "You hand the big wolf the pup, and it nudges its nose against you, as if in a thank you gesture. You then continue on your journey. You then encounter a camp.",
+      setting:
+        "You walk through the brush, hacking away at plants, while the wolf slowly trails behind",
+      option1: "Scout the camp",
+      option2: "Attack the campers",
+      option1Num: 11,
+      option2Num: 6,
+      end: false
+    },
+    11: {
+      goal:
+        "You scout the camp and you see 5 bandits. The wolf walks up next you you with bloodthirsty eyes.",
+      setting:
+        "The wolf seems to know who hurt the cub. It snarls and growls as it stares at the bandits.",
+      option1: "",
+      option2: "",
+      option1Num: 6,
+      option2Num: 1,
+      end: false
+    },
+    12: {
       goal: "",
       setting: "",
       option1: "",
@@ -96,29 +120,6 @@ export default function App() {
       end: false
     }
   };
-  let options1 = [
-    {
-      goal: "Suddenly a bear out of nowhere approaches you, what will you do?",
-      setting:
-        "You're in a dense forest, the birds in the trees noisily chirping away.",
-      option1: "Run away",
-      option2: "Play dead"
-    },
-    {
-      goal:
-        "Your heart bursts with fear and you run away as fast as you can, but you reach a cliff, with a pond around 300 feet below",
-      setting: "The birds stop chirping and the bear roars, and chases you",
-      option1: "Jump into the lake",
-      option2: "Fight the bear"
-    },
-    {
-      goal:
-        "You hold your breath and jump off the cliff, plunging deep into the water, but you're alive. You get on land and dry yourself off.",
-      setting: "Still surrounded by trees, but theres smoke in the distance",
-      option1: "Go to the smoke",
-      option2: "Prepare first"
-    }
-  ];
   function clickOption1() {
     // setGoal(options1[count].goal);
     // setOption1(options1[count].option1);
@@ -135,30 +136,6 @@ export default function App() {
       setCount(nextStep);
     }
   }
-  let options2 = [
-    {
-      goal:
-        "You gear up and head out into the forest, then stumbling upon an injured tiger, what do you do?",
-      setting: "You're in a dense forest, with no sight of what attacked it.",
-      option1: "Walk away",
-      option2: "Help it"
-    },
-    {
-      goal:
-        "You help the tiger, and with some bandages and splints he's able to walk again. You try to walk away but it follows you.",
-      setting: "The tiger walks around you, with curiosity",
-      option1: "Let it follow you on your adventure",
-      option2: "Run away and leave it"
-    },
-    {
-      goal:
-        "You leave the tiger behind, and it leaves you alone. Then you spot a rope, that looks like it was made for hunting traps",
-      setting:
-        "The rope was very long, and probably led to the hunters camp, to notify if they caught something",
-      option1: "Follow the rope",
-      option2: "Head towards the closest village for info"
-    }
-  ];
   function clickOption2() {
     let nextStep = options[count].option2Num; //1
     if (options[nextStep].end) {
