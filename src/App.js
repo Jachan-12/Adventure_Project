@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export default function App() {
   const [goal, setGoal] = useState(
-    "Ren's parents have been kidnapped by bandits in the forest, go on an expedition to save them"
+    "Your parents have been kidnapped by bandits and taken into the forest, go on an expedition to save them!"
   );
   const [setting, setSetting] = useState(
     "You start out at a small village, near an ocean and a huge forest."
@@ -90,7 +90,7 @@ export default function App() {
     },
     10: {
       goal:
-        "You hand the big wolf the pup, and it nudges its nose against you, as if in a thank you gesture. You then continue on your journey. You then encounter a camp.",
+        "You hand the big wolf the pup, and it nudges its nose against you, as if in a thank you gesture. You then continue on your journey. You see a camp in the distance.",
       setting:
         "You walk through the brush, hacking away at plants, while the wolf slowly trails behind",
       option1: "Scout the camp",
@@ -103,20 +103,11 @@ export default function App() {
       goal:
         "You scout the camp and you see 5 bandits. The wolf walks up next you you with bloodthirsty eyes.",
       setting:
-        "The wolf seems to know who hurt the cub. It snarls and growls as it stares at the bandits.",
-      option1: "",
-      option2: "",
+        "The wolf seems to know who hurt the pup. It snarls and growls as it stares at the bandits.",
+      option1: "Attack them alone",
+      option2: "Attack with the wolf",
       option1Num: 6,
-      option2Num: 1,
-      end: false
-    },
-    12: {
-      goal: "",
-      setting: "",
-      option1: "",
-      option2: "",
-      option1Num: 5,
-      option2Num: 6,
+      option2Num: 8,
       end: false
     }
   };
@@ -149,11 +140,15 @@ export default function App() {
   }
   return (
     <div className="App">
-      <h1>Ren's Adventure</h1>
+      <marquee>Your Adventure</marquee>
       <h2>{goal}</h2>
       <h3>{setting}</h3>
-      <button onClick={clickOption1}>{option1}</button>
-      <button onClick={clickOption2}>{option2}</button>
+      <button className="button" onClick={clickOption1}>
+        {option1}
+      </button>
+      <button className="button" onClick={clickOption2}>
+        {option2}
+      </button>
     </div>
   );
 }
