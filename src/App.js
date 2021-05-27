@@ -80,7 +80,7 @@ export default function App() {
     },
     9: {
       goal:
-        "You see that the baby wolf has a gash on its leg, and clean it and bandage it. Then a big wolf steps out the brush and approaches you.",
+        "You see that the baby wolf has a gash on its leg, you clean it and bandage it. Then a big wolf steps out the brush and approaches you.",
       setting: "A big, muscular wolf the size of you approaches slowly",
       option1: "Throw the pup as bait and run away",
       option2: "Hand the wolf the pup",
